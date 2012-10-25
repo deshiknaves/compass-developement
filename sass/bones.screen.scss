@@ -1,0 +1,47 @@
+@import 'bones';
+// Files in the bones lib use default vars defined in _core-defaults.scss
+// those vars may be overloaded at project level
+// 'bones' imports the following commented out files
+// @import 'bones/repairs';
+//  which imports:
+//      @import 'bones/repairs/html5';
+//      @import 'bones/repairs/typo';
+//      @import 'bones/repairs/nav';
+//      @import 'bones/repairs/forms';
+// @import 'bones/typo';
+
+// it also makes these utilities available:
+// @import 'bones/utilities/typo';
+
+
+// ===========================================================
+// other files not imported by 'bones' can be imported like so
+@import 'bones/utilities/clearfix';
+@import 'bones/utilities/flatten';
+@import 'bones/utilities/ie-fixers';
+
+.clearfix {
+    @include clearfix;
+}
+
+.flat-test-1 {
+    @include flatten;
+}
+
+.flat-test-2 {
+    @include flatten($margin:false);
+}
+
+.flat-test-3 {
+    @include flatten($padding: 0);
+}
+
+
+
+.flat-test-1 {
+    @include flatten($margin: 20px 0, $border: 1px solid red);
+}
+
+a:focus {
+    @include ie-focus-outline-none;
+}
