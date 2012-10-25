@@ -1,0 +1,92 @@
+// BONES - CORE DEFAULT VARIABLES
+// ==============================
+// DONT MODIFY HERE
+//
+$bones-repair-html5: true !default;
+$bones-repair-nav: true !default;
+$bones-repair-typo: true !default;
+$bones-repair-forms: true !default;
+
+$base-font-size: 16px !default;
+$base-font-family: sans-serif !default;
+$base-line-height: 1.1 !default; // use unitless!
+
+$COLOR_foreground: #000 !default;
+$COLOR_background: #fff !default;
+
+// NB: set these to desired px units at project level
+// the following sets browser default px sizes
+$h1-font-size: 2    * $base-font-size !default;
+$h2-font-size: 1.5  * $base-font-size !default;
+$h3-font-size: 1.17 * $base-font-size !default;
+$h4-font-size: 1    * $base-font-size !default;
+$h5-font-size: 0.83 * $base-font-size !default;
+$h6-font-size: 0.75 * $base-font-size !default;
+
+// heading margin bottoms share default 
+// unless specified at project level
+$hn-margin-bottom: 1.5em !default;
+$h1-margin-bottom: $hn-margin-bottom !default;
+$h2-margin-bottom: $hn-margin-bottom !default;
+$h3-margin-bottom: $hn-margin-bottom !default;
+$h4-margin-bottom: $hn-margin-bottom !default;
+$h5-margin-bottom: $hn-margin-bottom !default;
+$h6-margin-bottom: $hn-margin-bottom !default;
+
+// heading margin tops share default 
+// unless specified at project level
+$hn-margin-top: 0 !default;
+$h1-margin-top: $hn-margin-top !default;
+$h2-margin-top: $hn-margin-top !default;
+$h3-margin-top: $hn-margin-top !default;
+$h4-margin-top: $hn-margin-top !default;
+$h5-margin-top: $hn-margin-top !default;
+$h6-margin-top: $hn-margin-top !default;
+
+// heading margin bottoms share default 
+// unless specified at project level
+$hn-margin-bottom: 0 !default;
+$h1-margin-bottom: $hn-margin-bottom !default;
+$h2-margin-bottom: $hn-margin-bottom !default;
+$h3-margin-bottom: $hn-margin-bottom !default;
+$h4-margin-bottom: $hn-margin-bottom !default;
+$h5-margin-bottom: $hn-margin-bottom !default;
+$h6-margin-bottom: $hn-margin-bottom !default;
+
+// heading line-height share default 
+// unless specified at project level
+$hn-line-height: $base-line-height !default;
+$h1-line-height: $hn-line-height !default;
+$h2-line-height: $hn-line-height !default;
+$h3-line-height: $hn-line-height !default;
+$h4-line-height: $hn-line-height !default;
+$h5-line-height: $hn-line-height !default;
+$h6-line-height: $hn-line-height !default;
+
+$p-like-margin-top:     0 !default;
+$p-like-margin-bottom:  1.5em !default;
+
+$list-margin-top: $p-like-margin-top !default;
+$list-margin-bottom: $p-like-margin-bottom !default;
+$nested-list-margin-top: 0 !default;
+$nested-list-margin-bottom: 0 !default;
+
+$table-margin-top: $p-like-margin-top !default;
+$table-margin-bottom: $p-like-margin-bottom !default;
+
+$list-like-indent: 18px !default;
+$dd-indent-amount: $list-like-indent !default;
+$blockquote-indent: $list-like-indent !default;
+
+$both-us-and-bg-quotes: false !default;
+$prop-quotes-en-us: "\201c" "\201d" "\2018" "\2019" !default;
+$prop-quotes-en-gb: "\2018" "\2019" "\201c" "\201d" !default;
+$prop-quotes:       $prop-quotes-en-us !default;
+
+$del-color:     false !default;
+$ins-color:     false !default;
+$mark-color: #000 !default;
+$mark-background: #ff0 !default;
+$dfn-font-style: italic !default;
+$nav-lists-flat: true !default;
+$fontstack-monospace: monospace, serif !default;

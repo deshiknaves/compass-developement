@@ -1,0 +1,6 @@
+// sometimes in IE outline:none; still doesn't work on focused links
+// this addresses it when its essential its removed
+@mixin ie-focus-outline-none()
+{
+    *noFocusLine: expression(this.onFocus=this.blur());
+}

@@ -1,0 +1,67 @@
+@import 'base';
+@import 'compass/css3';
+
+$SITEDOMAIN: '';// example: http://iconinc.com.au/';
+$COLOR: #000;
+$BACKGROUND: #fff;
+$FONTSTACK_print: Georgia, "Times New Roman", Times, serif;
+
+* { 
+    background: transparent !important; 
+    color: $COLOR !important; 
+    text-shadow: none !important; 
+    filter:none !important; 
+    -ms-filter: none !important; 
+}
+
+// Add other project specific els to be hidden
+nav, video, audio, object, embed {
+    display: none;
+}
+
+@page { margin: 0.5cm; }
+// @page :left { margin: 0.5cm; }  
+// @page :right { margin: 0.8cm; }
+// @page :first { margin: 1cm 2cm; } 
+
+body { 
+    font: 12pt $FONTSTACK_print; 
+    line-height: 1.3; 
+    color: #COLOR;
+    background: $BACKGROUND;
+}
+
+p a:after { 
+    content: " (#{$SITEDOMAIN}" attr(href) ")"; 
+}
+
+// display link urls in p tags
+p a[href^="http://"]:after,
+p a[href^="https://"]:after { 
+    content: " (" attr(href) ")"; 
+    font-size: 80%; 
+}
+
+// dont display hash links or mailto
+p a[href^="#"]:after,
+p a[href^="mailto:"]:after {
+    display: none;
+}
+
+p {
+    a, a:visited { 
+        word-wrap: break-word; 
+        color: $COLOR;
+        text-decoration: underline;
+    }
+}
+
+abbr[title]:after { content: " (" attr(title) ")"; }
+
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+
+img { max-width: 100% !important; }
+
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+

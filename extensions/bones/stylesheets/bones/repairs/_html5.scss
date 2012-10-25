@@ -1,0 +1,42 @@
+// BONES - REPAIRS / HTML5
+// =======================
+// 
+@import '../core-defaults';
+@import 'compass/support';
+@if $bones-repair-html5 == true {
+    // HTML5 definitions for legacy browsers
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    nav,
+    section,
+    summary {
+        display: block;
+    }
+
+    audio,
+    canvas,
+    video {
+        display: inline-block;
+        @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+            *display: inline;
+            *zoom: 1;
+        }
+    }
+
+    // Prevents modern browsers from displaying `audio` without controls.
+    // Remove excess height in iOS 5 devices.
+    audio:not([controls]) {
+        display: none;
+        height: 0;
+    }
+
+    [hidden] {
+        display: none;
+    }
+}

@@ -1,0 +1,98 @@
+// BONES - TYPO DEFAULTS
+@import '../core-defaults';
+
+body {
+    font-family: $base-font-family;
+    font-size: px-to-em($base-font-size, 16px);
+    line-height: $base-line-height;
+    color: $COLOR_foreground;
+    background: $COLOR_background;
+}
+
+h1 {
+    font-size: px-to-em($h1-font-size);
+    line-height: $h1-line-height;
+    margin: px-to-em($h1-margin-top) 0 px-to-em($h1-margin-bottom) 0;
+}
+
+h2 {
+    font-size: px-to-em($h2-font-size);
+    line-height: $h2-line-height;
+    margin: px-to-em($h2-margin-top) 0 px-to-em($h2-margin-bottom) 0;
+}
+
+h3 {
+    font-size: px-to-em($h3-font-size);
+    line-height: $h3-line-height;
+    margin: px-to-em($h3-margin-top) 0 px-to-em($h3-margin-bottom) 0;
+}
+
+h4 {
+    font-size: px-to-em($h4-font-size);
+    line-height: $h4-line-height;
+    margin: px-to-em($h4-margin-top) 0 px-to-em($h4-margin-bottom) 0;
+}
+
+h5 {
+    font-size: px-to-em($h5-font-size);
+    line-height: $h5-line-height;
+    margin: px-to-em($h5-margin-top) 0 px-to-em($h5-margin-bottom) 0;
+}
+
+h6 {
+    font-size: px-to-em($h6-font-size);
+    line-height: $h6-line-height;
+    margin: px-to-em($h6-margin-top) 0 px-to-em($h6-margin-bottom) 0;
+}
+
+p, pre {
+    margin-top: px-to-em($p-like-margin-top);
+    margin-bottom: px-to-em($p-like-margin-bottom);
+}
+
+blockquote {
+    margin: px-to-em($p-like-margin-top) 0 px-to-em($p-like-margin-bottom) $blockquote-indent;
+}
+
+dl,
+ol,
+ul {
+    margin: px-to-em($list-margin-top) 0 px-to-em($list-margin-bottom) 0;
+    padding: 0 0 0 $list-like-indent;
+}
+
+dl {
+    padding: 0;
+}
+
+dd {
+    margin: 0 0 0 $dd-indent-amount;
+}
+
+@if type-of($del-color) == color {
+    del {
+        color: $del-color;
+    }
+}
+
+@if type-of($ins-color) == color {
+    ins {
+        color: $ins-color;
+    }
+}
+
+q {
+    quotes: $prop-quotes;
+}
+@if $both-us-and-bg-quotes == true {
+    // us / bg quotes are opposite
+    // but only implement if default $prop-quotes not none
+    @if $prop-quotes != none {
+        :lang(en-us)>q {
+            quotes: $prop-quotes-en-us;
+        }
+        :lang(en-bg)>q {
+            quotes: $prop-quotes-en-gb;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+// ADD GLOBAL AVAILABLE PROJECT VARS HERE
+$FONTSTACK_normal: Arial, sans-serif;
+$FONTSTACK_heading: $FONTSTACK_normal;
+
+$COLOR_foreground: #000;
+$COLOR_background: #fff;
+
+$base-font-size: 16px;
+$base-font-family: $FONTSTACK_normal;
+$base-line-height: 1.1; // use unitless!
+
+// SET HEADING PIXEL SIZES (converted to em via px-to-em())
+// $h1-font-size: px;
+// $h2-font-size: px;
+// $h3-font-size: px;
+// $h4-font-size: px;
+// $h5-font-size: px;
+// $h6-font-size: px;
+
+// SHARED HEADING MARGINS AND LINE HEIGHTS
+// to set specific to element define $h2-margin-bottom etc.
+$hn-margin-top: 0;
+$hn-margin-bottom: 1.5em;
+$hn-line-height: $base-line-height;
+
+// MARGINS FOR PARAGRAPHS AND SIMMILAR LIKE LISTS
+$p-like-margin-top:     0;
+$p-like-margin-bottom:  1.5em;
+// if different margins desired for lists etc specify here:
+// $list-margin-top: ;
+// $list-margin-bottom: ;
+// $nested-list-margin-top: 0;
+// $nested-list-margin-bottom: 0;
+// $table-margin-top: ;
+// $table-margin-bottom: ;
+
+// LEFT INDENT OF LISTS
+$list-like-indent: 18px;
+// $dd-indent-amount: $list-like-indent;
+// $blockquote-indent: $list-like-indent;
+
+// $del-color: ;
+// $ins-color: ;
+$mark-color: #000;
+$mark-background: #ff0;
+
+// set true for different quotes for :lang(en-us) and :lang(en-gb)
+// $both-us-and-bg-quotes: ;
+// set to none for no quotes on q element else uses en-us style quotes
+// $prop-quotes: ;
+
+// ====================================================================
+// OTHER DEFAULTS USED IN 'bones' UNCOMMENT AND CHANGE VALUE IF DESIRED
+// $bones-repair-html5: true;
+// $bones-repair-nav: true;
+// $bones-repair-typo: true;
+// $bones-repair-forms: true;
+
+// $dfn-font-style: italic;
+// $nav-lists-flat: true;
+// $fontstack-monospace: monospace, serif;

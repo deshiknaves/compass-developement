@@ -1,0 +1,14 @@
+// BONES - UTILITIES / TYPO
+// ========================
+// 
+@import '../core-defaults';
+
+@function px-to-em($px, $base: $base-font-size)
+{
+    @if $px == 0 or unit($px) == em {
+        // just return same
+        @return $px;
+    } @else if unit($px) == px {
+        @return #{( $px / $base )}em;
+    }
+}

@@ -1,0 +1,21 @@
+// Assuming there's paul irish style conditional html tags with classes
+// else do something else, whatever.
+@import 'base';
+@import 'compass/css3';
+@import 'bones/utilities/ie-fixers';
+
+// a:focus {
+//     @include ie-focus-outline-none;
+// }
+
+.ie8 {
+
+}
+
+.ie7 {
+
+}
+
+.ie6 {
+
+}

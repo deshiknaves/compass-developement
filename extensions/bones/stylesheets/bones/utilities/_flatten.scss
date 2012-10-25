@@ -1,0 +1,25 @@
+// quick flatten out margin/padding
+// and optionally border
+// in addition full size defs for each may be set for 
+// specialized flattening
+// Examples:
+// @include flatten; 
+//     = margin:0;padding:0;
+// @include flatten($border:0); AKA flatten all including border
+//     = margin:0;padding:0;border:0;
+// @include flatten($padding: 10px 0);
+//     = margin: 0;padding: 10px 0;
+// 
+// set var to false to exclude
+@mixin flatten($margin:0, $padding:0, $border: false)
+{
+    @if type-of($margin) == number or type-of($margin) == list {
+        margin: $margin;
+    }
+    @if type-of($padding) == number or type-of($padding) == list {
+        padding: $padding;
+    }
+    @if type-of($border) == number or type-of($border) == list {
+        border: $border;
+    }
+}

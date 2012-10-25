@@ -1,0 +1,27 @@
+// BONES - REPAIRS / NAV
+// =====================
+// 
+@import '../core-defaults';
+@import "compass/support";
+@if $bones-repair-nav == true {
+    @if($nav-lists-flat==true) {
+        nav {
+            ul,
+            ol {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    @if $legacy-support-for-ie7 {
+        // Corrects list images handled incorrectly in IE 7.
+
+        nav ul,
+        nav ol {
+            list-style: none;
+            list-style-image: none;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import 'compass/css3';
+@import 'base'; // <-- define global vars here
+@import 'bones';
+// @import 'bones/utilities/clearfix';
+// @import 'bones/utilities/flatten';
+
+// Typical project files
+// @import '_/layout';
+// @import '_/typo';
+// @import '_/nav';
+// @import '_/forms';
+
+
+// ===================================================================
+// clearfix EXAMPLE USAGE:
+// .clearfix {
+//     @include clearfix;
+// }
+// flatten EXAMPLE USAGE:
+// .el { @include flatten; } = margin/padding : 0
+// .el { @include flatten($padding:false); } = margin : 0
+// .el { @include flatten($border:0); } = margin/padding/border : 0
